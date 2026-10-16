@@ -1,7 +1,5 @@
 # Proyecto-Integrado-III
 
-# Proyecto Integrado III - Analítica de Datos
-
 Este repositorio contiene la solución a la **Actividad 1: obtener y preparar datos desde Hugging Face**, desarrollada en Codespaces sobre GitHub.
 
 ## 📂 Contenido
