@@ -1,0 +1,42 @@
+REPORTE DEL DATAFRAME
+============================================================
+Filas: 10393
+Columnas: 11
+Duplicados: 0
+
+Columnas y tipos:
+- title: object
+- warm_up: object
+- exercises: object
+- cool_down: object
+- notes: object
+- goal: object
+- equipment: object
+- duration_minutes: int64
+- difficulty: object
+- body_focus: object
+- source: object
+
+Valores nulos por columna:
+- title: 0
+- warm_up: 0
+- exercises: 0
+- cool_down: 0
+- notes: 0
+- goal: 0
+- equipment: 0
+- duration_minutes: 0
+- difficulty: 0
+- body_focus: 0
+- source: 0
+
+Estadísticas numéricas:
+       duration_minutes
+count         10393.000
+mean             37.997
+std              16.768
+min              15.000
+25%              30.000
+50%              45.000
+75%              60.000
+max              60.000
