@@ -1,0 +1,31 @@
+Message,Exercise,Set,Weight,Reps,Sets,RPE,Tempo
+"squat 3x8 85,85,80",squat,1,85kg,8,3,-,-
+,,2,85kg,8,3,-,-
+,,3,80kg,8,3,-,-
+"3 sets of 8 reps of bench press at 75,75,70kg with an RPE of 8, 8, 9",bench press,1,75kg,8,3,8,-
+,,2,75kg,8,3,8,-
+,,3,70kg,8,3,9,-
+"doing bench press: 8 reps x 3 sets at 75kg, 75kg, 70kg, RPE 8, 8, 9",bench press,1,75kg,8,3,8,-
+,,2,75kg,8,3,8,-
+,,3,70kg,8,3,9,-
+"4 sets of 12 reps at 80,85,90 with an RPE of 9, 9, 9",,1,80kg,12,4,9,-
+,,2,85kg,12,4,9,-
+,,3,90kg,12,4,9,-
+,,4,90kg,12,4,-,-
+"i did bench press, 60kg for 5x5",bench press,1,60kg,5,5,-,-
+,,2,60kg,5,5,-,-
+,,3,60kg,5,5,-,-
+,,4,60kg,5,5,-,-
+,,5,60kg,5,5,-,-
+"Deadlift 3x8x110 rpe 10, 9, 8",deadlift,1,110kg,8,3,10,-
+,,2,110kg,8,3,9,-
+,,3,110kg,8,3,8,-
+"Bench 3x5 - 80, 85, 85 (help abit)",bench press,1,80kg,5,3,-,-
+,,2,85kg,5,3,-,-
+,,3,85kg,5,3,-,-
+"2,1,0 tempo bench 2x5 - 75, 72.5",bench press,1,75kg,5,2,-,"2,1,0,0"
+,,2,72.5kg,5,2,-,-
+Static hold - 115*23s,bench static hold,1,115kg,-,1,-,"0,0,0,23"
+"Pull up 3x5 - 15, 20, 15",pull up,1,15kg,5,3,-,-
+,,2,20kg,5,3,-,-
+,,3,15kg,5,3,-,-
