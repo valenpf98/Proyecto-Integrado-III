@@ -34,6 +34,7 @@ jobs:
 
       - name: Instalar dependencias
         run: |
+          source .venv/bin/activate
           .venv/bin/python -m pip install --upgrade pip
           .venv/bin/python -m pip install -r requirements.txt
           .venv/bin/python -m pip install pyarrow openpyxl
@@ -47,7 +48,8 @@ jobs:
       - name: Ejecutar Semana_1SINC.ipynb
         working-directory: src/sincronicas
         run: |
-          ../../.venv/bin/python -m jupyter nbconvert \
+          source ../../.venv/bin/activate
+          jupyter nbconvert \
             --to notebook \
             --execute \
             --inplace \
