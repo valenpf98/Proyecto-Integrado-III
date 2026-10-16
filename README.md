@@ -13,3 +13,5 @@ Este repositorio contiene la solución a la **Actividad 1: obtener y preparar da
 Se emplea el dataset **workout-routine** disponible en Hugging Face, que contiene rutinas de entrenamiento.  
 Este dataset permite practicar la carga de datos reales y aplicar transformaciones básicas para su análisis.
 
+## Ejecutar el notebook
+jupyter notebook src/sincronicas/Semana_1SINC.ipynb
