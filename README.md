@@ -1,6 +1,6 @@
 # Proyecto-Integrado-III
 
-**Integrantes:** Estefania Martínez Guzmán y Valentina Pérez Flórez
+**Integrantes:** Estefania Martínez Guzmán, Carlos Andres Osorio y Valentina Pérez Flórez
 
 Este repositorio contiene la solución a la **Actividad 1: obtener y preparar datos desde Hugging Face**, desarrollada en Codespaces sobre GitHub.
 

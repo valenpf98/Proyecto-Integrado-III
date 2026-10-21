@@ -2,17 +2,18 @@
 from __future__ import annotations
 
 from pathlib import Path
-
 import pandas as pd
 
 
 class Reportes:
-    """Imprime y guarda un resumen legible de un DataFrame."""
+    """Imprime y guarda un resumen legible y descriptivo de un DataFrame."""
 
     def generar_reporte(self, df: pd.DataFrame) -> str:
         """Genera el contenido textual del reporte."""
         self._validar_dataframe(df)
         numericas = df.select_dtypes(include="number")
+        categoricas = df.select_dtypes(include="object")
+
         lineas = [
             "REPORTE DEL DATAFRAME",
             "=" * 60,
@@ -27,12 +28,33 @@ class Reportes:
             *[f"- {columna}: {cantidad}" for columna, cantidad in df.isna().sum().items()],
         ]
 
+        # Estadísticas numéricas
         if not numericas.empty:
             lineas += [
                 "",
                 "Estadísticas numéricas:",
                 numericas.describe().round(3).to_string(),
+                "",
+                "Mediana de columnas numéricas:",
+                str(numericas.median().round(3)),
             ]
+
+        # Valores únicos en columnas categóricas
+        if not categoricas.empty:
+            lineas += [
+                "",
+                "Valores únicos por columna categórica:",
+                *[f"- {col}: {df[col].nunique()}" for col in categoricas.columns],
+            ]
+
+            # Ejemplo de distribución en columnas clave si existen
+            for col in ["difficulty", "body_focus"]:
+                if col in df.columns:
+                    lineas += [
+                        "",
+                        f"Distribución de {col}:",
+                        str(df[col].value_counts().head()),
+                    ]
 
         return "\n".join(lineas) + "\n"
 
