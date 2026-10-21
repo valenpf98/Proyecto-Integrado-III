@@ -1,42 +1,56 @@
 REPORTE DEL DATAFRAME
 ============================================================
-Filas: 10393
-Columnas: 11
-Duplicados: 0
+Filas: 7886
+Columnas: 5
+Duplicados: 863
 
 Columnas y tipos:
-- title: object
-- warm_up: object
-- exercises: object
-- cool_down: object
-- notes: object
-- goal: object
-- equipment: object
+- workout_title: object
 - duration_minutes: int64
+- duration_hours: float64
 - difficulty: object
 - body_focus: object
-- source: object
 
 Valores nulos por columna:
-- title: 0
-- warm_up: 0
-- exercises: 0
-- cool_down: 0
-- notes: 0
-- goal: 0
-- equipment: 0
+- workout_title: 0
 - duration_minutes: 0
+- duration_hours: 0
 - difficulty: 0
 - body_focus: 0
-- source: 0
 
 Estadísticas numéricas:
-       duration_minutes
-count         10393.000
-mean             37.997
-std              16.768
-min              15.000
-25%              30.000
-50%              45.000
-75%              60.000
-max              60.000
+       duration_minutes  duration_hours
+count          7886.000        7886.000
+mean             45.308           0.755
+std              12.205           0.203
+min              30.000           0.500
+25%              30.000           0.500
+50%              45.000           0.750
+75%              60.000           1.000
+max              60.000           1.000
+
+Mediana de columnas numéricas:
+duration_minutes    45.00
+duration_hours       0.75
+dtype: float64
+
+Valores únicos por columna categórica:
+- workout_title: 5120
+- difficulty: 3
+- body_focus: 8
+
+Distribución de difficulty:
+difficulty
+advanced        2886
+intermediate    2548
+beginner        2452
+Name: count, dtype: int64
+
+Distribución de body_focus:
+body_focus
+full body     1449
+legs          1195
+cardio        1054
+upper body    1037
+lower body     917
+Name: count, dtype: int64
